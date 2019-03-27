@@ -123,3 +123,13 @@ async def _(event):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
 		deq.rotate(1)
+
+@bot.on(events.NewMessage(outgoing=True, pattern='.-.'))
+async def lmaoborghini(event):
+    uio = '._.'
+    for i in range (1,30):
+        time.sleep(0.3)
+        await event.edit(uio)
+        time.sleep(0.3)
+        await event.edit('.-.')
+    await event.edit(uio)
